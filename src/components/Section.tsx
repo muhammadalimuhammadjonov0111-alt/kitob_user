@@ -102,7 +102,7 @@ function Section({
                     <img
                       src={
                         book.image ||
-                        `https://picsum.photos{index + 1}/400/260`
+                        `https://picsum.photos{index + 1}`
                       }
                       alt={book.title}
                       className="book-img"
@@ -153,6 +153,7 @@ function Section({
                       </div>
 
                       <button
+                        type="button"
                         className={`rent-btn ${
                           isBought ? "bought" : "primary"
                         }`}
